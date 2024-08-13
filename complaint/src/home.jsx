@@ -1,5 +1,11 @@
 import { useState } from "react"
 import { BackgroundBlogCard } from "./card";
+import video from '../public/bg.mp4';
+import protection from '../public/protection.png';
+import complaint from '../public/complaint.png';
+import email from '../public/email.png';
+import hotline from '../public/hotline.png';
+
 const Home = () => {
     const [show, setShow] = useState(false);
     const handleClick = () => {
@@ -8,7 +14,7 @@ const Home = () => {
     return (
         <div>
             <video autoPlay loop muted className="absolute top-0 left-0 w-full h-full object-cover -z-30">
-                <source src="../public/bg.mp4" type="video/mp4" />
+                <source src={video} type="video/mp4" />
             </video>
             <div className='w-screen h-screen relative overflow-hidden flex justify-center '>
                 <img src="../public/hand.png" alt="hand" className='h-1/2 max-xl:-right-40 max-md:-right-20 max-md:top-2/3 absolute -right-4 top-1/2 translate-x-20 -translate-y-1/2 object-contain hand' />
@@ -17,10 +23,10 @@ const Home = () => {
                 <img src="../public/box.png" className='w-[700px] max-xl:w-full max-xl:-bottom-28 max-md:-bottom-16 absolute -bottom-24 left-1/2 -translate-x-1/2 box' alt="" />
                 {show ? <div className="flex flex-col items-center gap-10 w-3/4 max-xl:w-3/4 mt-10 text-center">
                     <ul className="flex flex-wrap justify-center items-center gap-2 w-full">
-                        <BackgroundBlogCard title={"البريد الالكتروني"} step={"الطريقة الاولى"} btn={true} img={"email"} btnlink={"mailto:complaint@nabaa-lb.com?body=اود ان اوجه شكوى"} className={'card-1'}/>
-                        <BackgroundBlogCard title={"الخط الساخن"} step={"الطريقة الثانية"} btn={true} img={'hotline'} btnlink={"tel:+96171427452"} className={'card-2'}/>
-                        <BackgroundBlogCard title={"النقاط المحورية للحماية"} step={"الطريقة الثالثة"} img={'protection'} className={'card-3'}/>
-                        <BackgroundBlogCard title={"صندوق الشكاوى"} step={"الطريقة الرابعة"} img={'complaint'} className={'card-4'}/>
+                        <BackgroundBlogCard title={"البريد الالكتروني"} step={"الطريقة الاولى"} btn={true} img={email} btnlink={"mailto:complaint@nabaa-lb.com?body=اود ان اوجه شكوى"} className={'card-1'}/>
+                        <BackgroundBlogCard title={"الخط الساخن"} step={"الطريقة الثانية"} btn={true} img={hotline} btnlink={"tel:+96171427452"} className={'card-2'}/>
+                        <BackgroundBlogCard title={"النقاط المحورية للحماية"} step={"الطريقة الثالثة"} img={protection} className={'card-3'}/>
+                        <BackgroundBlogCard title={"صندوق الشكاوى"} step={"الطريقة الرابعة"} img={complaint} className={'card-4'}/>
                           
 
                     </ul>

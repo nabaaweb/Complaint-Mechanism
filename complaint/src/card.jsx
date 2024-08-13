@@ -18,15 +18,16 @@ export function BackgroundBlogCard({title,step,img,btn,btnlink, className}) {
                 floated={false}
                 shadow={false}
                 color="transparent"
-                className={`absolute inset-0 m-0 h-full w-full rounded-none bg-[url('../public/${img}.png')] bg-cover bg-center`}
+                className={`absolute inset-0 m-0 h-full w-full rounded-none bg-cover bg-center`}
             >
+                <img src={img} alt="" />
                 <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-[#0064b2]/80 via-[#0064b2]/80" />
             </CardHeader>
             <CardBody className="relative py-14 px-6 md:px-12 ">
                 <Typography
                     variant="h2"
                     color="white"
-                    className="max-xl:mb-2 mb-6 font-bold leading-[1.5] text-md"
+                    className="max-xl:mb-2 mb-6 mt-2 font-bold leading-[1.5] text-md"
                 >
                     {title}
                 </Typography>

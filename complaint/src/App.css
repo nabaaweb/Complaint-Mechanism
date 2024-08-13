@@ -33,6 +33,24 @@
         }
     }
 }
+@media (max-width:768px){
+    @keyframes hand{
+        0%{
+            right: -50%;
+        }
+        100%{
+            right: -5rem;
+        }
+    }
+    @keyframes box{
+        0%{
+            bottom: -50%;
+        }
+        100%{
+            bottom: -4rem;
+        }
+    }
+}
 .hand{
     animation-name: hand;
     animation-duration: 2s;
