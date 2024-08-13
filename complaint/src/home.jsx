@@ -19,7 +19,7 @@ const Home = () => {
                     <ul className="flex flex-wrap justify-center items-center gap-2 w-full">
                         <BackgroundBlogCard title={"البريد الالكتروني"} step={"الطريقة الاولى"} btn={true} img={"email"} btnlink={"mailto:complaint@nabaa-lb.com?body=اود ان اوجه شكوى"} className={'card-1'}/>
                         <BackgroundBlogCard title={"الخط الساخن"} step={"الطريقة الثانية"} btn={true} img={'hotline'} btnlink={"tel:+96171427452"} className={'card-2'}/>
-                        <BackgroundBlogCard title={"النقاط المحورية"} step={"الطريقة الثالثة"} img={'protection'} className={'card-3'}/>
+                        <BackgroundBlogCard title={"النقاط المحورية للحماية"} step={"الطريقة الثالثة"} img={'protection'} className={'card-3'}/>
                         <BackgroundBlogCard title={"صندوق الشكاوى"} step={"الطريقة الرابعة"} img={'complaint'} className={'card-4'}/>
                           
 
