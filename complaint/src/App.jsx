@@ -22,7 +22,6 @@ function App() {
               path='/methods'
               element={<Methods />}
             ></Route>
-
           </Route>
         </Routes>
       </Router>

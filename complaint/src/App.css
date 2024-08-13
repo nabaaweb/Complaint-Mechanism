@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 @keyframes hand{
     0%{
         right: -50%;
     }
     100%{
-        right: 0;
+        right: -1rem;
     }
 }
 @keyframes box{
@@ -43,4 +44,61 @@
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     transition: all 2s ease-in-out;
+}
+@keyframes starting{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes starting-card{
+    0%{
+        transform: translate(-50%,-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+body{
+    animation-name: starting;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    font-family: 'Cairo', Arial;
+}
+.card-1{
+    animation-name: starting-card;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.25s;
+    transition: all;
+    transition-duration: 1s;
+}
+.card-2{
+    animation-name: starting-card;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    transition: all;
+    transition-duration: 1s;
+}
+.card-3{
+    animation-name: starting-card;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.75s;
+    transition: all;
+    transition-duration: 1s;
+}
+.card-4{
+    animation-name: starting-card;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    transition: all;
+    transition-duration: 1s;
+}
+.quote{
+    animation-name: starting;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
 }
