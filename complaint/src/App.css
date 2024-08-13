@@ -1,0 +1,46 @@
+@keyframes hand{
+    0%{
+        right: -50%;
+    }
+    100%{
+        right: 0;
+    }
+}
+@keyframes box{
+    0%{
+        bottom: -50%;
+    }
+    100%{
+        bottom: -6rem;
+    }
+}
+@media (max-width:1280px){
+    @keyframes hand{
+        0%{
+            right: -50%;
+        }
+        100%{
+            right: -10rem;
+        }
+    }
+    @keyframes box{
+        0%{
+            bottom: -50%;
+        }
+        100%{
+            bottom: -7rem;
+        }
+    }
+}
+.hand{
+    animation-name: hand;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transition: all 2s ease-in-out;
+}
+.box{
+    animation-name: box;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    transition: all 2s ease-in-out;
+}
