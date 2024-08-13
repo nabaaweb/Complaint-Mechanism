@@ -5,6 +5,9 @@ import protection from '../public/protection.png';
 import complaint from '../public/complaint.png';
 import email from '../public/email.png';
 import hotline from '../public/hotline.png';
+import logo from '../public/logo.png';
+import hand from '../public/hand.png';
+import box from '../public/box.png';
 
 const Home = () => {
     const [show, setShow] = useState(false);
@@ -17,10 +20,10 @@ const Home = () => {
                 <source src={video} type="video/mp4" />
             </video>
             <div className='w-screen h-screen relative overflow-hidden flex justify-center '>
-                <img src="../public/hand.png" alt="hand" className='h-1/2 max-xl:-right-40 max-md:-right-20 max-md:top-2/3 absolute -right-4 top-1/2 translate-x-20 -translate-y-1/2 object-contain hand' />
-                <img src="../public/logo.png" alt="" className='absolute -top-5 -left-5 max-xl:w-full max-xl:h-full max-xl:top-40 max-xl:-z-10 max-xl:opacity-50 max-xl:left-0 w-[200px] h-[200px] object-contain' />
+                <img src={hand} alt="hand" className='h-1/2 max-xl:-right-40 max-md:-right-20 max-md:top-2/3 absolute -right-4 top-1/2 translate-x-20 -translate-y-1/2 object-contain hand' />
+                <img src={logo} alt="logo" className='absolute -top-8 -left-8 max-xl:w-full max-xl:h-full max-xl:top-40 max-xl:-z-10 max-xl:opacity-50 max-xl:left-0 w-[250px] h-[250px] object-contain' />
                 <span className='w-screen h-screen absolute bg-[#bbc5e7] -right-1/2 -z-20 rounded-full -bottom-1/2 shadow-[#0b63a2] shadow-inner'></span>
-                <img src="../public/box.png" className='w-[700px] max-xl:w-full max-xl:-bottom-28 max-md:-bottom-16 absolute -bottom-24 left-1/2 -translate-x-1/2 box' alt="" />
+                <img src={box} className='w-[700px] max-xl:w-full max-xl:-bottom-28 max-md:-bottom-16 absolute -bottom-24 left-1/2 -translate-x-1/2 box' alt="" />
                 {show ? <div className="flex flex-col items-center gap-10 w-3/4 max-xl:w-3/4 mt-10 text-center">
                     <ul className="flex flex-wrap justify-center items-center gap-2 w-full">
                         <BackgroundBlogCard title={"البريد الالكتروني"} step={"الطريقة الاولى"} btn={true} img={email} btnlink={"mailto:complaint@nabaa-lb.com?body=اود ان اوجه شكوى"} className={'card-1'}/>
