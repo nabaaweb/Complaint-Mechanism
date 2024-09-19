@@ -66,7 +66,6 @@ const DigitalComplaint = () => {
         } else {
             if (validatePhoneNumber(complaint.phone)) {
                 try {
-
                     const option = {
                         method: 'POST',
                         headers: {
@@ -76,7 +75,8 @@ const DigitalComplaint = () => {
                             complaint
                         })
                     }
-                    const res = await fetch(import.meta.env.VITE_SEND_URL, option)
+                    const sendUrl = import.meta.env.VITE_SEND_URL;
+                    const res = await fetch(sendUrl, option)
                     if (res) {
                         setRedirect(true);
                     }
