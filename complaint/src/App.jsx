@@ -3,26 +3,23 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
 import Home from './home';
-import Methods from './methods';
+import DigitalComplaint from './digital-complaint';
 function App() {
   return (
     <>
       <Router>
         <Routes>
           <Route
-            exact
             path='/'
             element={<Home />}
           >
-            <Route
-              exact
-              path='/methods'
-              element={<Methods />}
-            ></Route>
           </Route>
+          <Route
+              path='/digital-complaint'
+              element={<DigitalComplaint />}
+            ></Route>
         </Routes>
       </Router>
     </>

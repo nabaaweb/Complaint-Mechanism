@@ -1,122 +1,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
-@keyframes hand{
-    0%{
+
+@keyframes hand {
+    0% {
         right: -50%;
     }
-    100%{
+
+    100% {
         right: -1rem;
     }
 }
-@keyframes box{
-    0%{
+
+@keyframes box {
+    0% {
         bottom: -50%;
     }
-    100%{
+
+    100% {
         bottom: -6rem;
     }
 }
-@media (max-width:1280px){
-    @keyframes hand{
-        0%{
+
+@media (max-width:1280px) {
+    @keyframes hand {
+        0% {
             right: -50%;
         }
-        100%{
+
+        100% {
             right: -10rem;
         }
     }
-    @keyframes box{
-        0%{
+
+    @keyframes box {
+        0% {
             bottom: -50%;
         }
-        100%{
+
+        100% {
             bottom: -7rem;
         }
     }
 }
-@media (max-width:768px){
-    @keyframes hand{
-        0%{
+
+@media (max-width:768px) {
+    @keyframes hand {
+        0% {
             right: -50%;
         }
-        100%{
+
+        100% {
             right: -5rem;
         }
     }
-    @keyframes box{
-        0%{
+
+    @keyframes box {
+        0% {
             bottom: -50%;
         }
-        100%{
+
+        100% {
             bottom: -4rem;
         }
     }
 }
-.hand{
+
+.hand {
     animation-name: hand;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     transition: all 2s ease-in-out;
 }
-.box{
+
+.box {
     animation-name: box;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     transition: all 2s ease-in-out;
 }
-@keyframes starting{
-    0%{
+
+@keyframes starting {
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
-@keyframes starting-card{
-    0%{
-        transform: translate(-50%,-50%);
+
+@keyframes starting-card {
+    0% {
+        transform: translate(-50%, -50%);
         opacity: 0;
     }
-    100%{
-        transform: translate(0,0);
+
+    100% {
+        transform: translate(0, 0);
         opacity: 1;
     }
 }
-body{
+.show{
     animation-name: starting;
     animation-timing-function: ease-in-out;
-    animation-duration: 2s;
+    animation-duration: .25s;
+}
+body,
+.digitalComplaint {
+    animation-name: starting;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
     font-family: 'Cairo', Arial;
 }
-.card-1{
+
+.card-1 {
     animation-name: starting-card;
     animation-timing-function: ease-in-out;
     animation-duration: 0.25s;
     transition: all;
     transition-duration: 1s;
 }
-.card-2{
+
+.card-2 {
     animation-name: starting-card;
     animation-timing-function: ease-in-out;
     animation-duration: 0.5s;
     transition: all;
     transition-duration: 1s;
 }
-.card-3{
+
+.card-3 {
     animation-name: starting-card;
     animation-timing-function: ease-in-out;
     animation-duration: 0.75s;
     transition: all;
     transition-duration: 1s;
 }
-.card-4{
+
+.card-4 {
     animation-name: starting-card;
     animation-timing-function: ease-in-out;
     animation-duration: 1s;
     transition: all;
     transition-duration: 1s;
 }
-.quote{
+
+.quote {
     animation-name: starting;
     animation-timing-function: ease-in-out;
     animation-duration: 0.5s;
+}
+
+.pop-up {
+    animation-name: starting;
+    animation-timing-function: ease-in-out;
+    animation-duration: .25s;
+}
+img, video{
+    pointer-events: none;
 }
