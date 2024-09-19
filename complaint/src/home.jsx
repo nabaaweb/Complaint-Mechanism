@@ -20,7 +20,7 @@ const Home = () => {
     }
     return (
         <div>
-            <video autoPlay loop muted className="absolute top-0 left-0 w-screen h-screen object-cover -z-30">
+            <video autoPlay playsInline loop muted className="absolute top-0 left-0 w-screen h-screen object-cover -z-30">
                 <source src={video} type="video/mp4" />
             </video>
             <div className='w-screen h-screen relative overflow-hidden flex justify-center '>

@@ -96,7 +96,7 @@ const DigitalComplaint = () => {
     return (
         <div className='digitalComplaint'>
             {(failed || redirect) && <span className={`w-full h-full bg-[#0064B2] absolute top-0 left-0 opacity-50 z-10 transition-all`}></span>}
-            <video autoPlay loop muted className="absolute top-0 left-0 w-screen h-screen object-cover -z-30">
+            <video autoPlay playsInline loop muted className="absolute top-0 left-0 w-screen h-screen object-cover -z-30">
                 <source src={video} type="video/mp4" />
             </video>
             <div className='w-screen h-screen relative overflow-hidden flex justify-center '>
